@@ -1,0 +1,19 @@
+{
+  "name": "journel",
+  "version": "1.0.0",
+  "description": "journaling app for life's important moments",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owenmedina/Journel.git"
+  },
+  "author": "Owen Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owenmedina/Journel/issues"
+  },
+  "homepage": "https://github.com/owenmedina/Journel#readme"
+}
