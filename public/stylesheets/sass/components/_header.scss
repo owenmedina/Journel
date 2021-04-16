@@ -5,7 +5,7 @@
 
   display: grid;
   grid-template-columns: 30% 1fr;
-  grid-template-rows: 55% 15% 25%;
+  grid-template-rows: 55% 10% 30%;
   grid-template-areas:
     "photos title"
     "photos date"
@@ -26,7 +26,9 @@
 
   &__date {
     grid-area: date;
-    background-color: rosybrown;
+
+    font-size: 1.5rem;
+    color: $color-grey-dark;
   }
 
   &__player {
