@@ -4,7 +4,13 @@
   "description": "journaling app for life's important moments",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:nonsass": "nodemon --ext js,ejs",
+    "watch:sass": "sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css --watch",
+    "compile:sass": "sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css",
+    "server": "node app.js",
+    "watch": "run-p watch:sass watch:nonsass",
+    "start": "npm-run-all compile:sass server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/owenmedina/Journel/issues"
   },
-  "homepage": "https://github.com/owenmedina/Journel#readme"
+  "homepage": "https://github.com/owenmedina/Journel#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "npm-run-all": "^4.1.5"
+  }
 }
