@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:nonsass": "nodemon --ext js,ejs",
+    "watch:nonsass": "nodemon --ext js,ejs --ignore public",
     "watch:sass": "sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css --watch",
     "compile:sass": "sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css",
     "server": "node app.js",

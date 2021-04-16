@@ -9,14 +9,8 @@
 body {
   box-sizing: border-box;
   background-color: $color-background;
+  width: 100%;
 
-  display: flex;
-
-  &:first-child {
-    flex: 0 0 20%;
-  }
-
-  &:last-child {
-    flex: 1;
-  }
+  display: grid;
+  grid-template-columns: 5% 1fr;
 }
