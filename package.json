@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/owenmedina/Journel#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5"
   }
 }

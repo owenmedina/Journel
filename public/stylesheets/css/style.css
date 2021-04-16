@@ -1,0 +1,35 @@
+:root {
+  --font-primary: "Lato", sans-serif;
+  --font-logo: "Mrs Sheppards", cursive;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #eff7f6;
+  display: flex;
+}
+body:first-child {
+  flex: 0 0 20%;
+}
+body:last-child {
+  flex: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
