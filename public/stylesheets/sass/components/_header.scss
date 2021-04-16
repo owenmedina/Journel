@@ -19,7 +19,9 @@
 
   &__title {
     grid-area: title;
-    background-color: rebeccapurple;
+    align-self: end;
+
+    font-size: 8rem;
   }
 
   &__date {
