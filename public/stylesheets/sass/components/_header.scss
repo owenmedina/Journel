@@ -1,6 +1,6 @@
 .header {
   background-color: $color-secondary;
-  padding: 3rem 4rem;
+  padding: 3rem var(--padding-sides-timeline);
   grid-row: 1 / 2;
 
   display: grid;

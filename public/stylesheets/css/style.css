@@ -1,6 +1,7 @@
 :root {
   --font-primary: "Lato", sans-serif;
   --font-logo: "Mrs Sheppards", cursive;
+  --padding-sides-timeline: 4rem;
 }
 
 *,
@@ -30,7 +31,7 @@ body {
 
 .header {
   background-color: #f7d6e0;
-  padding: 3rem 4rem;
+  padding: 3rem var(--padding-sides-timeline);
   grid-row: 1/2;
   display: grid;
   grid-template-columns: 30% 1fr;
@@ -56,7 +57,13 @@ body {
 }
 
 .post {
+  padding: var(--padding-sides-timeline);
+  column-count: 2;
+  column-gap: 2rem;
+  column-fill: auto;
   background-color: coral;
+  line-height: 1.5;
+  font-size: 1.25rem;
   grid-row: 2;
 }
 
