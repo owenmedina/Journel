@@ -1,3 +1,9 @@
 html {
   font-size: 62.5%; // 1rem = 10px
 }
+
+body {
+  font-family: var(--font-primary);
+
+  color: $color-black;
+}
