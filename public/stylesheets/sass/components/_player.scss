@@ -1,0 +1,96 @@
+.player {
+  grid-area: player;
+  align-self: center;
+  width: 40%;
+
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+
+  height: 100%;
+  background-color: $color-player-background;
+  border-radius: 5rem;
+  padding: 0 2rem;
+
+  .btn-play {
+    background-color: rgba($color-secondary, 0.7);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon-play {
+      height: 3rem;
+      width: 3rem;
+      fill: $color-white;
+    }
+  }
+
+  .scrubber {
+    height: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(var(--height-scrubber-bar));
+
+    &__bar {
+      flex: 0 0 var(--height-scrubber-bar);
+      width: 100%;
+      position: relative;
+    }
+
+    &__total {
+      height: 100%;
+      width: 100%;
+      background-color: $color-grey-light;
+      border-radius: var(--border-radius-scrubber-bar);
+    }
+
+    &__elapsed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+
+      display: flex;
+    }
+
+    &__amount {
+      flex: 0 0
+        calc(
+          100% - var(--width-scrubber-point) +
+            var(--x-translation-scrubber-point)
+        );
+      border-radius: var(--border-radius-scrubber-bar);
+      background-color: $color-white;
+      z-index: 2;
+    }
+
+    &__point {
+      align-self: center;
+
+      width: var(--width-scrubber-point);
+      height: var(--width-scrubber-point);
+      transform: translateX(var(--x-translation-scrubber-point));
+      border-radius: 50%;
+      background-color: $color-white;
+      cursor: pointer;
+    }
+
+    &__timestamp {
+      margin-top: 0.2rem;
+      color: $color-player-bar;
+
+      flex: 1;
+
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

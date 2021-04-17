@@ -1,7 +1,11 @@
 :root {
+  --border-radius-scrubber-bar: 0.2rem;
   --font-primary: "Lato", sans-serif;
   --font-logo: "Mrs Sheppards", cursive;
+  --height-scrubber-bar: 30%;
   --padding-sides-timeline: 4rem;
+  --width-scrubber-point: 1.15rem;
+  --x-translation-scrubber-point: -0.1rem;
 }
 
 *,
@@ -30,7 +34,7 @@ body {
 }
 
 .header {
-  background-color: #f7d6e0;
+  background-color: #b9e4ee;
   padding: 3rem var(--padding-sides-timeline);
   grid-row: 1/2;
   display: grid;
@@ -39,23 +43,96 @@ body {
   grid-template-areas: "photos title" "photos date" "photos player";
   column-gap: 2rem;
 }
-.header__photos {
+.header .photos {
   grid-area: photos;
   background-color: cornflowerblue;
 }
-.header__title {
+.header .title {
   grid-area: title;
   align-self: end;
   font-size: 8rem;
 }
-.header__date {
+.header .date {
   grid-area: date;
   font-size: 1.5rem;
   color: #495057;
 }
-.header__player {
+
+.player {
   grid-area: player;
-  background-color: orangered;
+  align-self: center;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5rem;
+  padding: 0 2rem;
+}
+.player .btn-play {
+  background-color: rgba(247, 214, 224, 0.7);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player .btn-play .icon-play {
+  height: 3rem;
+  width: 3rem;
+  fill: #fff;
+}
+.player .scrubber {
+  height: 1rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(var(--height-scrubber-bar));
+}
+.player .scrubber__bar {
+  flex: 0 0 var(--height-scrubber-bar);
+  width: 100%;
+  position: relative;
+}
+.player .scrubber__total {
+  height: 100%;
+  width: 100%;
+  background-color: #d2d2d2;
+  border-radius: var(--border-radius-scrubber-bar);
+}
+.player .scrubber__elapsed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.player .scrubber__amount {
+  flex: 0 0 calc( 100% - var(--width-scrubber-point) + var(--x-translation-scrubber-point) );
+  border-radius: var(--border-radius-scrubber-bar);
+  background-color: #fff;
+  z-index: 2;
+}
+.player .scrubber__point {
+  align-self: center;
+  width: var(--width-scrubber-point);
+  height: var(--width-scrubber-point);
+  transform: translateX(var(--x-translation-scrubber-point));
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.player .scrubber__timestamp {
+  margin-top: 0.2rem;
+  color: #495057;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .post {

@@ -1,24 +1,41 @@
 //////////////// COLORS ////////////////
-$color-primary: #7bdff2;
+$color-primary: #b9e4ee;
 $color-primary-dark: #72b3f1;
 $color-secondary: #f7d6e0;
 $color-secondary-dark: #f2b5d4;
 
 $color-background: #eff7f6;
 
+$color-white: #fff;
+
 $color-black: #000;
 
+$color-grey-lighter: #f8f9fa;
 $color-grey-light: #d2d2d2;
 $color-grey-dark: #495057;
 
+$color-player-background: rgba($color-white, 0.25);
+$color-player-bar: $color-grey-dark;
 //////////////// BORDERS ////////////////
 $border-nav: $color-grey-light 0.2rem solid;
 
 :root {
+  //////////////// BORDER-RADIUS ////////////////
+  --border-radius-scrubber-bar: 0.2rem;
+
   //////////////// FONTS ////////////////
   --font-primary: "Lato", sans-serif;
   --font-logo: "Mrs Sheppards", cursive;
 
+  //////////////// HEIGHT ////////////////
+  --height-scrubber-bar: 30%;
+
   //////////////// PADDING ////////////////
   --padding-sides-timeline: 4rem;
+
+  //////////////// WIDTH ////////////////
+  --width-scrubber-point: 1.15rem;
+
+  //////////////// X-TRANSLATION ////////////////
+  --x-translation-scrubber-point: -0.1rem;
 }

@@ -17,10 +17,34 @@
     <main>
       <div class="timeline">
         <div class="header">
-          <div class="header__photos">Photos</div>
-          <div class="header__title">Lorem ipsum dolor sit amet.</div>
-          <div class="header__date">October 31, 2021</div>
-          <div class="header__player">Player</div>
+          <div class="photos">Photos</div>
+          <div class="title">Lorem ipsum dolor sit amet.</div>
+          <div class="date">October 31, 2021</div>
+          <div class="player">
+            <div class="btn-play">
+              <svg class="icon-play">
+                <use
+                  xlink:href="/images/svg/symbol-defs.svg#icon-controller-play"
+                ></use>
+              </svg>
+            </div>
+            <div class="scrubber">
+              <div class="scrubber__bar">
+                <div class="scrubber__total"></div>
+                <div class="scrubber__elapsed">
+                  <div class="scrubber__amount"></div>
+                  <div class="scrubber__point"></div>
+                </div>
+              </div>
+              <div class="scrubber__timestamp">
+                <div class="scrubber__start">0:00</div>
+                <div class="scrubber__end">3:21</div>
+              </div>
+            </div>
+            <audio>
+              <source src="" type="audio/mp3" />
+            </audio>
+          </div>
         </div>
         <div class="post">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.

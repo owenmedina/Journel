@@ -1,5 +1,5 @@
 .header {
-  background-color: $color-secondary;
+  background-color: $color-primary;
   padding: 3rem var(--padding-sides-timeline);
   grid-row: 1 / 2;
 
@@ -12,27 +12,22 @@
     "photos player";
   column-gap: 2rem;
 
-  &__photos {
+  .photos {
     grid-area: photos;
     background-color: cornflowerblue;
   }
 
-  &__title {
+  .title {
     grid-area: title;
     align-self: end;
 
     font-size: 8rem;
   }
 
-  &__date {
+  .date {
     grid-area: date;
 
     font-size: 1.5rem;
     color: $color-grey-dark;
-  }
-
-  &__player {
-    grid-area: player;
-    background-color: orangered;
   }
 }
