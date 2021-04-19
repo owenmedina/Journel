@@ -10,6 +10,7 @@
   --padding-sides-timeline: 4rem;
   --width-scrubber-point: 1.15rem;
   --x-translation-scrubber-point: -0.1rem;
+  --z-index-frontmost: 3000;
 }
 
 *,
@@ -39,6 +40,40 @@ body {
 
 .mt-sm {
   margin-top: 3rem;
+}
+
+.gallery {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: calc(var(--z-index-frontmost) - 1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.gallery:target {
+  opacity: 1;
+  visibility: visible;
+}
+.gallery:target .gallery__img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.gallery__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.25);
+  transition: all 0.3s 0.2s;
+  max-width: 75%;
+  max-height: 85%;
+  background-size: contain;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  z-index: var(--z-index-frontmost);
 }
 
 .header {
@@ -81,7 +116,7 @@ body {
   z-index: 4;
 }
 .photos .photo:last-of-type {
-  box-shadow: 0.75rem 0.75rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 .photos .photo--active {
   z-index: 3;

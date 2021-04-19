@@ -16,8 +16,14 @@ $color-grey-dark: #495057;
 
 $color-player-background: rgba($color-grey-light, 0.125);
 $color-player-bar: $color-grey-dark;
+
+$color-overlay-background: rgba($color-black, 0.8);
+
 //////////////// BORDERS ////////////////
 $border-nav: $color-grey-light 0.2rem solid;
+
+//////////////// BOX SHADOW ////////////////
+$box-shadow-gallery-photo: 0 2rem 4rem rgba($color-black, 0.2);
 
 :root {
   //////////////// BORDER-RADIUS ////////////////
@@ -46,4 +52,7 @@ $border-nav: $color-grey-light 0.2rem solid;
 
   //////////////// X-TRANSLATION ////////////////
   --x-translation-scrubber-point: -0.1rem;
+
+  //////////////// Z-INDEX ////////////////
+  --z-index-frontmost: 3000;
 }
