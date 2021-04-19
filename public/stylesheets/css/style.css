@@ -38,7 +38,6 @@ body {
 }
 
 .header {
-  background-color: #b9e4ee;
   padding: 2rem var(--padding-sides-timeline);
   grid-row: 1/2;
   display: grid;
@@ -51,6 +50,7 @@ body {
   grid-area: title;
   align-self: end;
   font-size: 8rem;
+  color: #72b3f1;
 }
 .header .date {
   grid-area: date;

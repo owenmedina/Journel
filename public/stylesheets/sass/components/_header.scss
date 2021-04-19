@@ -1,5 +1,5 @@
 .header {
-  background-color: $color-primary;
+  // background-color: $color-primary;
   padding: 2rem var(--padding-sides-timeline);
   grid-row: 1 / 2;
 
@@ -17,6 +17,7 @@
     align-self: end;
 
     font-size: 8rem;
+    color: $color-primary-dark;
   }
 
   .date {
