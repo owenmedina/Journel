@@ -37,6 +37,10 @@ body {
   color: #000;
 }
 
+.mt-sm {
+  margin-top: 3rem;
+}
+
 .header {
   padding: 2rem var(--padding-sides-timeline);
   grid-row: 1/2;
@@ -103,7 +107,7 @@ body {
   align-items: center;
   column-gap: 1.5rem;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(210, 210, 210, 0.125);
   border-radius: 5rem;
   padding: 0 2rem;
 }
