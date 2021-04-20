@@ -1,10 +1,13 @@
 "use strict";
 
 const express = require("express");
+const path = require("path");
+const photos = require(path.join(__dirname, "routes/photos.js"));
 
 const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use("/photos", photos);
 
 const port = process.env.PORT || 3000;
 
