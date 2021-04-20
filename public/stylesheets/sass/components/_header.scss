@@ -24,6 +24,7 @@
 
   .date {
     grid-area: date;
+    align-self: start;
 
     font-size: 1.5rem;
     color: $color-grey-dark;

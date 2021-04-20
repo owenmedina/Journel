@@ -96,9 +96,10 @@ function fitText(element, text, maxLines = 1) {
   console.log("heights", elementHeight, dimensions.height);
   console.log("widths", elementWidth, dimensions.width);
   console.log("font size", fontSize);
+  const graceSpace = elementWidth / 4;
   while (
     (elementHeight / dimensions.height) * elementWidth <
-    dimensions.width
+    dimensions.width + graceSpace
   ) {
     newFontSize = getDecreasedFontSize(newFontSize);
     dimensions = getTextInfo(text, newFontSize);
