@@ -7,7 +7,7 @@
   --left-between-photos: 0.75rem;
   --top-photo--active: 0rem;
   --top-between-photos: 0.75rem;
-  --padding-sides-timeline: 4rem;
+  --padding-sides-timeline: 2rem;
   --width-scrubber-point: 1.15rem;
   --x-translation-scrubber-point: -0.1rem;
   --z-index-frontmost: 3000;
@@ -106,6 +106,60 @@ body {
   align-self: start;
   font-size: 1.5rem;
   color: #495057;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.icon-play {
+  fill: #fff;
+}
+
+.logo {
+  font-family: var(--font-logo);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  height: 40%;
+  padding: 1.5rem 1rem 0 2rem;
+}
+.navbar > :not(:nth-child(2)) {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.navbar > :not(:nth-child(2)):hover {
+  transform: scale(1.25);
+}
+.navbar__logo {
+  color: #b9e4ee;
+  font-size: 3.5rem;
+  height: 5%;
+}
+.navbar__separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar__separator--top, .navbar__separator--middle, .navbar__separator--bottom {
+  height: 0.75rem;
+}
+.navbar__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #fff;
+}
+.navbar__separator--top .navbar__icon, .navbar__separator--bottom .navbar__icon {
+  width: 4rem;
+}
+.navbar__separator--middle .navbar__icon {
+  width: 2rem;
 }
 
 .photos {
