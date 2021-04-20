@@ -1,6 +1,6 @@
 .photos {
   display: grid;
-  grid-template-rows: 10% 10% 65% 5%;
+  grid-template-rows: 12.5% 5.5% 65% 5%;
   justify-items: center;
 
   width: 100%;
@@ -13,6 +13,29 @@
   }
 
   &__control-bar {
+    display: flex;
+    gap: 1rem;
+
+    width: 70%;
+
+    & > *:last-child {
+      margin-left: auto;
+    }
+
+    .filter--date,
+    .filter--tags {
+      cursor: pointer;
+      font-size: 1.25rem;
+      width: 10%;
+    }
+
+    .icon-sort {
+      height: 2rem;
+      width: 2rem;
+      fill: $color-primary;
+
+      transform: rotate(270deg);
+    }
   }
 
   &__photos-grid {
