@@ -1,0 +1,23 @@
+.photos {
+  display: grid;
+  grid-template-rows: 10% 10% 65% 5%;
+  justify-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  &__heading {
+    font-size: 5.5rem;
+    font-weight: 800;
+    align-self: end;
+  }
+
+  &__control-bar {
+  }
+
+  &__photos-grid {
+  }
+
+  &__older-photos-prompt {
+  }
+}
