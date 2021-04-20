@@ -129,6 +129,14 @@ body {
   align-items: center;
   padding: 1.5rem 1rem 0 2rem;
 }
+.navbar > :not(:nth-child(2)) {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.navbar > :not(:nth-child(2)):hover {
+  transform: scale(1.15);
+}
 .navbar__logo {
   color: #b9e4ee;
   font-size: 3.5rem;
