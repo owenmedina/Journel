@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 app.get("/", function (req, res) {
   console.log("Some TimeController function");
-  res.render("timeline");
+  res.render("timeline", { year: new Date().getFullYear() });
 });
 
 app.listen(port, function () {

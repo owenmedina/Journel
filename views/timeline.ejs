@@ -20,43 +20,7 @@
     <title>Journel</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <div class="logo">J</div>
-      </div>
-      <div class="navbar__separator">
-        <div class="navbar__separator--top">
-          <svg class="navbar__icon icon icon-minus">
-            <use xlink:href="/images/svg/symbol-defs.svg#icon-minus"></use>
-          </svg>
-        </div>
-        <div class="navbar__separator--middle">
-          <svg class="navbar__icon icon icon-minus">
-            <use xlink:href="/images/svg/symbol-defs.svg#icon-minus"></use>
-          </svg>
-        </div>
-        <div class="navbar__separator--bottom">
-          <svg class="navbar__icon icon icon-minus">
-            <use xlink:href="/images/svg/symbol-defs.svg#icon-minus"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="navbar__posts">
-        <svg class="navbar__icon icon icon-text">
-          <use xlink:href="/images/svg/symbol-defs.svg#icon-text"></use>
-        </svg>
-      </div>
-      <div class="navbar__photos">
-        <svg class="navbar__icon icon icon-images">
-          <use xlink:href="/images/svg/symbol-defs.svg#icon-images"></use>
-        </svg>
-      </div>
-      <div class="navbar__recordings">
-        <svg class="navbar__icon icon icon-video">
-          <use xlink:href="/images/svg/symbol-defs.svg#icon-video"></use>
-        </svg>
-      </div>
-    </nav>
+    <%- include('partials/navbar'); %>
     <main>
       <div class="timeline">
         <div class="gallery" id="gallery">
@@ -171,5 +135,6 @@
         </div>
       </div>
     </main>
+    <%- include("partials/footer", {year: year}); %>
   </body>
 </html>
