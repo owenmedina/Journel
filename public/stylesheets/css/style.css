@@ -108,14 +108,12 @@ body {
   color: #495057;
 }
 
-.icon-minus {
+.icon {
   height: 3rem;
-  width: 4rem;
+  width: 3rem;
 }
 
 .icon-play {
-  height: 3rem;
-  width: 3rem;
   fill: #fff;
 }
 
@@ -127,6 +125,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 40%;
   padding: 1.5rem 1rem 0 2rem;
 }
 .navbar > :not(:nth-child(2)) {
@@ -135,11 +135,12 @@ body {
   transition: all 0.2s;
 }
 .navbar > :not(:nth-child(2)):hover {
-  transform: scale(1.15);
+  transform: scale(1.25);
 }
 .navbar__logo {
   color: #b9e4ee;
   font-size: 3.5rem;
+  height: 5%;
 }
 .navbar__separator {
   display: flex;
@@ -149,11 +150,16 @@ body {
 .navbar__separator--top, .navbar__separator--middle, .navbar__separator--bottom {
   height: 0.75rem;
 }
+.navbar__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #fff;
+}
+.navbar__separator--top .navbar__icon, .navbar__separator--bottom .navbar__icon {
+  width: 4rem;
+}
 .navbar__separator--middle .navbar__icon {
   width: 2rem;
-}
-.navbar__icon {
-  fill: #fff;
 }
 
 .photos {
