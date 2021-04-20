@@ -1,3 +1,32 @@
 .navbar {
-  //   border-right: $border-nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1.5rem 1rem 0 2rem;
+
+  &__logo {
+    color: $color-primary;
+    font-size: 3.5rem;
+  }
+
+  &__separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--top,
+    &--middle,
+    &--bottom {
+      height: 0.75rem;
+    }
+  }
+
+  &__separator--middle &__icon {
+    width: 2rem;
+  }
+
+  &__icon {
+    fill: $color-white;
+  }
 }
