@@ -1,0 +1,58 @@
+//////////////// COLORS ////////////////
+$color-primary: #b9e4ee;
+$color-primary-dark: #72b3f1;
+$color-secondary: #f7d6e0;
+$color-secondary-dark: #f2b5d4;
+
+$color-background: #eff7f6;
+
+$color-white: #fff;
+
+$color-black: #000;
+
+$color-grey-lighter: #f8f9fa;
+$color-grey-light: #d2d2d2;
+$color-grey-dark: #495057;
+
+$color-player-background: rgba($color-grey-light, 0.125);
+$color-player-bar: $color-grey-dark;
+
+$color-overlay-background: rgba($color-black, 0.8);
+
+//////////////// BORDERS ////////////////
+$border-nav: $color-grey-light 0.2rem solid;
+
+//////////////// BOX SHADOW ////////////////
+$box-shadow-gallery-photo: 0 2rem 4rem rgba($color-black, 0.2);
+
+:root {
+  //////////////// BORDER-RADIUS ////////////////
+  --border-radius-scrubber-bar: 0.2rem;
+
+  //////////////// FONTS ////////////////
+  --font-primary: "Lato", sans-serif;
+  --font-logo: "Mrs Sheppards", cursive;
+
+  //////////////// HEIGHT ////////////////
+  --height-scrubber-bar: 30%;
+
+  //////////////// LEFT ////////////////
+  --left-photo--active: -0.25rem;
+  --left-between-photos: 0.75rem;
+
+  //////////////// TOP ////////////////
+  --top-photo--active: 0rem;
+  --top-between-photos: 0.75rem;
+
+  //////////////// PADDING ////////////////
+  --padding-sides-timeline: 4rem;
+
+  //////////////// WIDTH ////////////////
+  --width-scrubber-point: 1.15rem;
+
+  //////////////// X-TRANSLATION ////////////////
+  --x-translation-scrubber-point: -0.1rem;
+
+  //////////////// Z-INDEX ////////////////
+  --z-index-frontmost: 3000;
+}

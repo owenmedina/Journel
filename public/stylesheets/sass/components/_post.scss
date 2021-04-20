@@ -1,0 +1,11 @@
+.post {
+  padding: var(--padding-sides-timeline);
+  column-count: 2;
+  column-gap: 2rem;
+  column-fill: auto;
+
+  line-height: 1.5;
+  font-size: 1.25rem;
+
+  grid-row: 2;
+}

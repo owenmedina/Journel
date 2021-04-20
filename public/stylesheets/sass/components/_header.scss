@@ -1,0 +1,32 @@
+.header {
+  // background-color: $color-primary;
+  padding: 2rem var(--padding-sides-timeline);
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 55% 10% 30%;
+  grid-template-areas:
+    "photos title"
+    "photos date"
+    "photos player";
+  column-gap: 3rem;
+
+  .title {
+    grid-area: title;
+    align-self: end;
+
+    font-size: 8rem;
+    color: $color-primary-dark;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .date {
+    grid-area: date;
+    align-self: start;
+
+    font-size: 1.5rem;
+    color: $color-grey-dark;
+  }
+}

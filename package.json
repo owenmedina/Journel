@@ -1,0 +1,32 @@
+{
+  "name": "journel",
+  "version": "1.0.0",
+  "description": "journaling app for life's important moments",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:nonsass": "nodemon --ext js,ejs --ignore public",
+    "watch:sass": "sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css --watch",
+    "compile:sass": "sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css",
+    "server": "node app.js",
+    "watch": "run-p watch:sass watch:nonsass",
+    "start": "npm-run-all compile:sass server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owenmedina/Journel.git"
+  },
+  "author": "Owen Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owenmedina/Journel/issues"
+  },
+  "homepage": "https://github.com/owenmedina/Journel#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "ws": "^7.4.5"
+  }
+}
