@@ -180,43 +180,6 @@ body {
   width: 2rem;
 }
 
-.photos {
-  grid-area: photos;
-  padding-right: 4rem;
-  position: relative;
-}
-.photos .photo {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: absolute;
-  cursor: pointer;
-  transform: translateZ(0) translate(0, 0);
-  transition: all 0.5s;
-}
-.photos .photo:hover {
-  transform: translateZ(5rem) translate(-0.5rem, -0.5rem);
-  z-index: 4;
-}
-.photos .photo:last-of-type {
-  box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
-}
-.photos .photo--active {
-  z-index: 3;
-  top: var(--top-photo--active);
-  left: var(--left-photo--active);
-}
-.photos .photo--mid {
-  z-index: 2;
-  top: calc(var(--top-photo--active) + var(--top-between-photos));
-  left: calc(var(--left-photo--active) + var(--left-between-photos));
-}
-.photos .photo--last {
-  z-index: 1;
-  top: calc(var(--top-photo--active) + (var(--top-between-photos) * 2));
-  left: calc(var(--left-photo--active) + (var(--left-between-photos) * 2));
-}
-
 .player {
   grid-area: player;
   align-self: center;
@@ -317,6 +280,42 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 40% 60%;
+}
+.timeline__photos {
+  grid-area: photos;
+  padding-right: 4rem;
+  position: relative;
+}
+.timeline__photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  cursor: pointer;
+  transform: translateZ(0) translate(0, 0);
+  transition: all 0.5s;
+}
+.timeline__photo:hover {
+  transform: translateZ(5rem) translate(-0.5rem, -0.5rem);
+  z-index: 4;
+}
+.timeline__photo:last-of-type {
+  box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+.timeline__photo--active {
+  z-index: 3;
+  top: var(--top-photo--active);
+  left: var(--left-photo--active);
+}
+.timeline__photo--mid {
+  z-index: 2;
+  top: calc(var(--top-photo--active) + var(--top-between-photos));
+  left: calc(var(--left-photo--active) + var(--left-between-photos));
+}
+.timeline__photo--last {
+  z-index: 1;
+  top: calc(var(--top-photo--active) + (var(--top-between-photos) * 2));
+  left: calc(var(--left-photo--active) + (var(--left-between-photos) * 2));
 }
 
 /*# sourceMappingURL=style.css.map */

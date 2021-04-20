@@ -4,4 +4,49 @@
 
   display: grid;
   grid-template-rows: 40% 60%;
+
+  &__photos {
+    grid-area: photos;
+    padding-right: 4rem;
+    position: relative;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+
+    // Hover effect
+    transform: translateZ(0) translate(0, 0);
+    transition: all 0.5s;
+
+    &:hover {
+      transform: translateZ(5rem) translate(-0.5rem, -0.5rem);
+      z-index: 4;
+    }
+
+    &:last-of-type {
+      box-shadow: 0.5rem 0.5rem 0.75rem rgba($color-black, 0.1);
+    }
+  }
+
+  &__photo--active {
+    z-index: 3;
+    top: var(--top-photo--active);
+    left: var(--left-photo--active);
+  }
+
+  &__photo--mid {
+    z-index: 2;
+    top: calc(var(--top-photo--active) + var(--top-between-photos));
+    left: calc(var(--left-photo--active) + var(--left-between-photos));
+  }
+
+  &__photo--last {
+    z-index: 1;
+    top: calc(var(--top-photo--active) + (var(--top-between-photos) * 2));
+    left: calc(var(--left-photo--active) + (var(--left-between-photos) * 2));
+  }
 }

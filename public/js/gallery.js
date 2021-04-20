@@ -1,6 +1,6 @@
 const gallery = document.querySelector(".gallery");
 const galleryImg = document.querySelector(".gallery__img");
-const photosContainer = document.querySelector(".photos");
+const photosContainer = document.querySelector(".timeline__photos");
 
 const galleryHref = "#gallery";
 
@@ -13,7 +13,7 @@ gallery.addEventListener("click", function (e) {
 
 // Open gallery
 photosContainer.addEventListener("click", function (e) {
-  if (e.target.classList.contains("photo")) {
+  if (e.target.classList.contains("timeline__photo")) {
     galleryImg.src = e.target.src;
     window.location.href = galleryHref;
   }
