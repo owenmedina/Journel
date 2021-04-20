@@ -42,6 +42,14 @@ body {
   margin-top: 3rem;
 }
 
+.tf-calculation {
+  position: absolute;
+  visibility: hidden;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+}
+
 .gallery {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -90,6 +98,8 @@ body {
   align-self: end;
   font-size: 8rem;
   color: #72b3f1;
+  height: 100%;
+  overflow: hidden;
 }
 .header .date {
   grid-area: date;

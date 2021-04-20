@@ -1,3 +1,16 @@
 .mt-sm {
   margin-top: 3rem;
 }
+
+.tf-calculation {
+  // do not disturb page flow
+  position: absolute;
+  visibility: hidden;
+
+  // set dimensions to fit content
+  width: auto;
+  height: auto;
+
+  // dont wrap text so we know exactly how much width it needs
+  white-space: nowrap;
+}
