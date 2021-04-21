@@ -218,6 +218,38 @@ body {
   grid-auto-columns: 5.5rem;
   width: 70%;
 }
+.photos-grid__item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.photos-grid__item:hover .item__image {
+  filter: blur(2px);
+}
+.photos-grid__item:hover .item__detail {
+  opacity: 1;
+}
+.photos-grid__item .item__image {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  filter: blur(0px);
+  transition: blur 0.5s ease-in;
+}
+.photos-grid__item .item__detail {
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.7s;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .photos-grid__1-1 {
   grid-row-end: span 1;
   grid-column-end: span 1;
