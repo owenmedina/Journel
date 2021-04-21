@@ -401,7 +401,7 @@ body {
 }
 .photos__main {
   display: grid;
-  grid-template-rows: 3rem minmax(30%, 50%) 3rem;
+  grid-template-rows: 3rem minmax(30%, 50%) 2rem;
   justify-items: center;
   row-gap: 1rem;
   width: 100%;
@@ -426,6 +426,13 @@ body {
   fill: #b9e4ee;
   transform: rotate(270deg);
 }
+.photos__older-photos-prompt {
+  border-bottom: 0.3rem solid currentColor;
+  cursor: pointer;
+  font-size: 1.15rem;
+  color: #b9e4ee;
+}
+
 .timeline {
   width: 100%;
   height: 100vh;
