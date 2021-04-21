@@ -27,7 +27,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 5% 1fr;
-  grid-template-rows: 100vh 5%;
+  grid-template-rows: auto 10%;
   grid-template-areas: "navbar main" "navbar footer";
 }
 
@@ -50,6 +50,10 @@ body {
 
 .mt-md {
   margin-top: 5rem;
+}
+
+.mb-xs {
+  margin-bottom: 1.5rem;
 }
 
 .mb-sm {
