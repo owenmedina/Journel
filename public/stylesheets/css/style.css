@@ -173,7 +173,8 @@ body {
   align-items: center;
   gap: 4rem;
   height: 40%;
-  padding: 1.5rem 1rem 0 2rem;
+  padding-right: 1rem;
+  padding-left: 2rem;
 }
 .navbar > :not(:nth-child(2)) {
   cursor: pointer;
@@ -393,17 +394,17 @@ body {
   grid-row: 2;
 }
 
-.photos {
-  display: grid;
-  grid-template-rows: 12.5% 5% 70% 2.5%;
-  justify-items: center;
-  width: 100%;
-  height: 100vh;
-}
 .photos__heading {
   font-size: 5.5rem;
   font-weight: 800;
-  align-self: end;
+  text-align: center;
+}
+.photos__main {
+  display: grid;
+  grid-template-rows: 3rem minmax(30%, 50%) 3rem;
+  justify-items: center;
+  row-gap: 1rem;
+  width: 100%;
 }
 .photos__control-bar {
   display: flex;
