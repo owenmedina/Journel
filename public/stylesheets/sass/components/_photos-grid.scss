@@ -18,7 +18,7 @@
         filter: blur(2px);
       }
 
-      .item__detail {
+      .item__details {
         opacity: 1;
       }
     }
@@ -32,7 +32,7 @@
       transition: blur 0.5s ease-in;
     }
 
-    .item__detail {
+    .item__details {
       background: rgba($color-white, 0.2);
       opacity: 0;
       transition: opacity 0.7s;
@@ -45,8 +45,28 @@
       left: 0;
 
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
+
+      padding: 0 0.5rem 0.75rem 0.5rem;
+
+      .item__detail {
+        font-size: 1.25rem;
+        color: $color-white;
+      }
+
+      .item__detail--tags {
+        display: flex;
+
+        .item__detail--tag::before {
+          content: "#";
+        }
+
+        .item__detail--tag:not(:last-of-type)::after {
+          content: "\00A0";
+        }
+      }
     }
   }
 

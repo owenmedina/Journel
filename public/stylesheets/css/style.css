@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --border-radius-scrubber-bar: 0.2rem;
   --font-primary: "Lato", sans-serif;
@@ -230,7 +231,7 @@ body {
 .photos-grid__item:hover .item__image {
   filter: blur(2px);
 }
-.photos-grid__item:hover .item__detail {
+.photos-grid__item:hover .item__details {
   opacity: 1;
 }
 .photos-grid__item .item__image {
@@ -240,7 +241,7 @@ body {
   filter: blur(0px);
   transition: blur 0.5s ease-in;
 }
-.photos-grid__item .item__detail {
+.photos-grid__item .item__details {
   background: rgba(255, 255, 255, 0.2);
   opacity: 0;
   transition: opacity 0.7s;
@@ -251,8 +252,23 @@ body {
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding: 0 0.5rem 0.75rem 0.5rem;
+}
+.photos-grid__item .item__details .item__detail {
+  font-size: 1.25rem;
+  color: #fff;
+}
+.photos-grid__item .item__details .item__detail--tags {
+  display: flex;
+}
+.photos-grid__item .item__details .item__detail--tags .item__detail--tag::before {
+  content: "#";
+}
+.photos-grid__item .item__details .item__detail--tags .item__detail--tag:not(:last-of-type)::after {
+  content: " ";
 }
 .photos-grid__1-1 {
   grid-row-end: span 1;
