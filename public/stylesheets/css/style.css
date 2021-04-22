@@ -285,82 +285,66 @@ body {
 .photos-grid__1-1 {
   grid-row-end: span 1;
   grid-column-end: span 1;
-  background-color: burlywood;
 }
 .photos-grid__1-2 {
   grid-row-end: span 1;
   grid-column-end: span 2;
-  background-color: burlywood;
 }
 .photos-grid__1-3 {
   grid-row-end: span 1;
   grid-column-end: span 3;
-  background-color: burlywood;
 }
 .photos-grid__1-4 {
   grid-row-end: span 1;
   grid-column-end: span 4;
-  background-color: burlywood;
 }
 .photos-grid__2-1 {
   grid-row-end: span 2;
   grid-column-end: span 1;
-  background-color: blueviolet;
 }
 .photos-grid__2-2 {
   grid-row-end: span 2;
   grid-column-end: span 2;
-  background-color: blueviolet;
 }
 .photos-grid__2-3 {
   grid-row-end: span 2;
   grid-column-end: span 3;
-  background-color: blueviolet;
 }
 .photos-grid__2-4 {
   grid-row-end: span 2;
   grid-column-end: span 4;
-  background-color: blueviolet;
 }
 .photos-grid__3-1 {
   grid-row-end: span 3;
   grid-column-end: span 1;
-  background-color: yellowgreen;
 }
 .photos-grid__3-2 {
   grid-row-end: span 3;
   grid-column-end: span 2;
-  background-color: yellowgreen;
 }
 .photos-grid__3-3 {
   grid-row-end: span 3;
   grid-column-end: span 3;
-  background-color: yellowgreen;
 }
 .photos-grid__3-4 {
   grid-row-end: span 3;
   grid-column-end: span 4;
-  background-color: yellowgreen;
 }
 .photos-grid__4-1 {
   grid-row-end: span 4;
   grid-column-end: span 1;
-  background-color: aqua;
 }
 .photos-grid__4-2 {
   grid-row-end: span 4;
   grid-column-end: span 2;
-  background-color: aqua;
 }
 .photos-grid__4-3 {
   grid-row-end: span 4;
   grid-column-end: span 3;
-  background-color: aqua;
 }
 .photos-grid__4-4 {
   grid-row-end: span 4;
   grid-column-end: span 4;
-  background-color: aqua;
 }
 
 .player {
