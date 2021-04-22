@@ -1,0 +1,18 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 0.2rem rgba($color-grey-light, 0.15) solid;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.15rem 0.5rem 0.5rem;
+  text-align: start;
+
+  &__name {
+  }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-primary;
+  }
+}

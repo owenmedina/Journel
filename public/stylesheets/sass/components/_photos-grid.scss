@@ -1,0 +1,159 @@
+.photos-grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, 5.5rem);
+  grid-template-rows: repeat(auto-fit, 5.5rem);
+  grid-auto-rows: 5.5rem;
+  grid-auto-columns: 5.5rem;
+
+  width: 70%;
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .item__image {
+        filter: blur(2px);
+      }
+
+      .item__details {
+        opacity: 1;
+      }
+    }
+
+    .item__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.05);
+
+      filter: blur(0px);
+      transition: blur 0.5s ease-in;
+    }
+
+    .item__details {
+      background: rgba($color-white, 0.2);
+      opacity: 0;
+      transition: opacity 0.7s;
+      pointer-events: none;
+      touch-action: none;
+
+      font-size: 2rem;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      padding: 0 0.5rem 0.75rem 0.5rem;
+
+      .item__detail {
+        font-size: 1.25rem;
+        color: $color-white;
+      }
+
+      .item__detail--tags {
+        display: flex;
+
+        .item__detail--tag::before {
+          content: "#";
+        }
+
+        .item__detail--tag:not(:last-of-type)::after {
+          content: "\00A0";
+        }
+      }
+    }
+  }
+
+  &__1-1 {
+    grid-row-end: span 1;
+    grid-column-end: span 1;
+    background-color: burlywood;
+  }
+  &__1-2 {
+    grid-row-end: span 1;
+    grid-column-end: span 2;
+    background-color: burlywood;
+  }
+  &__1-3 {
+    grid-row-end: span 1;
+    grid-column-end: span 3;
+    background-color: burlywood;
+  }
+  &__1-4 {
+    grid-row-end: span 1;
+    grid-column-end: span 4;
+    background-color: burlywood;
+  }
+
+  &__2-1 {
+    grid-row-end: span 2;
+    grid-column-end: span 1;
+    background-color: blueviolet;
+  }
+  &__2-2 {
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+    background-color: blueviolet;
+  }
+  &__2-3 {
+    grid-row-end: span 2;
+    grid-column-end: span 3;
+    background-color: blueviolet;
+  }
+  &__2-4 {
+    grid-row-end: span 2;
+    grid-column-end: span 4;
+    background-color: blueviolet;
+  }
+
+  &__3-1 {
+    grid-row-end: span 3;
+    grid-column-end: span 1;
+    background-color: yellowgreen;
+  }
+  &__3-2 {
+    grid-row-end: span 3;
+    grid-column-end: span 2;
+    background-color: yellowgreen;
+  }
+  &__3-3 {
+    grid-row-end: span 3;
+    grid-column-end: span 3;
+    background-color: yellowgreen;
+  }
+  &__3-4 {
+    grid-row-end: span 3;
+    grid-column-end: span 4;
+    background-color: yellowgreen;
+  }
+
+  &__4-1 {
+    grid-row-end: span 4;
+    grid-column-end: span 1;
+    background-color: aqua;
+  }
+  &__4-2 {
+    grid-row-end: span 4;
+    grid-column-end: span 2;
+    background-color: aqua;
+  }
+  &__4-3 {
+    grid-row-end: span 4;
+    grid-column-end: span 3;
+    background-color: aqua;
+  }
+  &__4-4 {
+    grid-row-end: span 4;
+    grid-column-end: span 4;
+    background-color: aqua;
+  }
+}

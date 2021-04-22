@@ -1,84 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Mrs+Sheppards&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      defer
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    ></script>
-    <script defer src="/js/live.js"></script>
+    <%- include('partials/header'); %>
     <script defer src="/js/gallery.js"></script>
     <script defer src="/js/text-fit.js"></script>
     <title>Journel</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <div class="logo">J</div>
-      </div>
-      <div class="navbar__separator">
-        <div class="navbar__separator--top">
-          <svg class="navbar__icon icon icon-minus">
-            <use xlink:href="/images/svg/symbol-defs.svg#icon-minus"></use>
-          </svg>
-        </div>
-        <div class="navbar__separator--middle">
-          <svg class="navbar__icon icon icon-minus">
-            <use xlink:href="/images/svg/symbol-defs.svg#icon-minus"></use>
-          </svg>
-        </div>
-        <div class="navbar__separator--bottom">
-          <svg class="navbar__icon icon icon-minus">
-            <use xlink:href="/images/svg/symbol-defs.svg#icon-minus"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="navbar__posts">
-        <svg class="navbar__icon icon icon-text">
-          <use xlink:href="/images/svg/symbol-defs.svg#icon-text"></use>
-        </svg>
-      </div>
-      <div class="navbar__photos">
-        <svg class="navbar__icon icon icon-images">
-          <use xlink:href="/images/svg/symbol-defs.svg#icon-images"></use>
-        </svg>
-      </div>
-      <div class="navbar__recordings">
-        <svg class="navbar__icon icon icon-video">
-          <use xlink:href="/images/svg/symbol-defs.svg#icon-video"></use>
-        </svg>
-      </div>
-    </nav>
+    <%- include('partials/navbar'); %>
     <main>
       <div class="timeline">
         <div class="gallery" id="gallery">
           <img src="" alt="Gallery Photo" class="gallery__img" />
         </div>
         <div class="header">
-          <div class="photos">
+          <div class="timeline__photos gallery__target-container">
             <img
               src="/images/photo-1.jpg"
               alt="Photo 1"
-              class="photo photo--active"
+              class="gallery__target timeline__photo timeline__photo--active"
             />
             <img
               src="/images/photo-2.jpg"
               alt="Photo 2"
-              class="photo photo--mid"
+              class="gallery__target timeline__photo timeline__photo--mid"
             />
 
             <img
               src="/images/photo-3.jpg"
               alt="Photo 3"
-              class="photo photo--last"
+              class="gallery__target timeline__photo timeline__photo--last"
             />
           </div>
           <div class="title">
@@ -171,5 +122,6 @@
         </div>
       </div>
     </main>
+    <%- include("partials/footer", {year: year}); %>
   </body>
 </html>

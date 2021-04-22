@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/header'); %>
+    <script defer src="/js/gallery.js"></script>
+    <title>Journel</title>
+  </head>
+  <body>
+    <%- include("partials/navbar"); %>
+    <main>
+      <div class="gallery" id="gallery">
+        <img src="" alt="Gallery Photo" class="gallery__img" />
+      </div>
+      <div class="photos mt-xs">
+        <div class="photos__heading">Isaac's Photos</div>
+        <div class="photos__main mt-sm">
+          <div class="photos__control-bar">
+            <div class="filter--date filter">
+              <div class="filter__name">Date</div>
+              <svg class="filter__icon icon icon-triangle-down">
+                <use
+                  xlink:href="/images/svg/symbol-defs.svg#icon-triangle-down"
+                ></use>
+              </svg>
+            </div>
+            <div class="filter--tags filter">
+              <div class="filter__name">Tags</div>
+              <svg class="filter__icon icon icon-triangle-down">
+                <use
+                  xlink:href="/images/svg/symbol-defs.svg#icon-triangle-down"
+                ></use>
+              </svg>
+            </div>
+            <div class="btn--sort">
+              <svg class="icon icon-sort">
+                <use
+                  xlink:href="/images/svg/symbol-defs.svg#icon-bar-graph"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="photos-grid mb-sm gallery__target-container">
+            <div class="photos-grid__2-3 photos-grid__item">
+              <img
+                src="/images/grid-photo-1.jpg"
+                alt="Grid Photo 1"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="photos-grid__4-4 photos-grid__item">
+              <img
+                src="/images/grid-photo-2.jpg"
+                alt="Grid Photo 2"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <div class="photos-grid__3-4 photos-grid__item">
+              <img
+                src="/images/grid-photo-3.jpg"
+                alt="Grid Photo 3"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <div class="photos-grid__4-3 photos-grid__item">
+              <img
+                src="/images/grid-photo-4.jpg"
+                alt="Grid Photo 4"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <div class="photos-grid__2-3 photos-grid__item">
+              <img
+                src="/images/grid-photo-5.jpg"
+                alt="Grid Photo 5"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <div class="photos-grid__3-3 photos-grid__item">
+              <img
+                src="/images/grid-photo-6.jpg"
+                alt="Grid Photo 6"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <div class="photos-grid__4-4 photos-grid__item">
+              <img
+                src="/images/grid-photo-7.jpg"
+                alt="Grid Photo 7"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <div class="photos-grid__4-4 photos-grid__item">
+              <img
+                src="/images/grid-photo-8.jpg"
+                alt="Grid Photo 8"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="photos-grid__4-3 photos-grid__item">
+              <img
+                src="/images/grid-photo-9.jpg"
+                alt="Grid Photo 9"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <div class="photos-grid__4-3 photos-grid__item">
+              <img
+                src="/images/grid-photo-10.jpg"
+                alt="Grid Photo 10"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="photos-grid__3-3 photos-grid__item">
+              <img
+                src="/images/grid-photo-11.jpg"
+                alt="Grid Photo 11"
+                class="item__image gallery__target"
+              />
+              <div class="item__details">
+                <div class="item__detail item__detail--date">May 2, 2021</div>
+                <div class="item__detail item__detail--tags">
+                  <div class="item__detail--tag">day35</div>
+                  <div class="item__detail--tag">emotional</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="photos-grid__1-1 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">1x1</div>
+            </div>
+            <div class="photos-grid__2-4 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">2x4</div>
+            </div>
+            <div class="photos-grid__1-4 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">1x4</div>
+            </div>
+            <div class="photos-grid__1-3 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">1x3</div>
+            </div>
+            <div class="photos-grid__1-2 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">1x2</div>
+            </div>
+            <div class="photos-grid__3-4 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">3x4</div>
+            </div>
+            <div class="photos-grid__4-1 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">4x1</div>
+            </div>
+            <div class="photos-grid__1-3 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">1x3</div>
+            </div>
+            <div class="photos-grid__4-2 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">4x2</div>
+            </div>
+            <div class="photos-grid__1-4 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">1x4</div>
+            </div>
+            <div class="photos-grid__2-3 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">2x3</div>
+            </div>
+            <div class="photos-grid__3-2 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">3x2</div>
+            </div>
+            <div class="photos-grid__3-3 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">3x3</div>
+            </div>
+            <div class="photos-grid__3-1 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">3x1</div>
+            </div>
+            <div class="photos-grid__4-4 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">4x4</div>
+            </div>
+            <div class="photos-grid__4-3 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">4x3</div>
+            </div>
+            <div class="photos-grid__3-1 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">3x1</div>
+            </div>
+            <div class="photos-grid__2-2 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">2x2</div>
+            </div>
+            <div class="photos-grid__2-1 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">2x1</div>
+            </div>
+            <div class="photos-grid__3-4 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">3x4</div>
+            </div>
+            <div class="photos-grid__4-1 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">4x1</div>
+            </div>
+            <div class="photos-grid__1-3 photos-grid__item">
+              <img src="" alt="" class="item__image" />
+              <div class="item__details">1x3</div>
+            </div> -->
+          </div>
+          <div class="photos__older-photos-prompt">Show older photos</div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <%- include('partials/footer', {year}); %>
+</html>

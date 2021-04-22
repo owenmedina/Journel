@@ -5,13 +5,17 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/button";
+@import "components/filter";
+@import "components/footer";
 @import "components/gallery";
 @import "components/header";
 @import "components/icon";
 @import "components/logo";
 @import "components/navbar";
-@import "components/photos";
+@import "components/photos-grid";
 @import "components/player";
 @import "components/post";
 
+@import "pages/photos";
 @import "pages/timeline";
