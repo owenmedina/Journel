@@ -8,19 +8,19 @@
   z-index: calc(var(--z-index-frontmost) - 1);
 
   opacity: 0;
-  visibility: hidden;
-  //   display: none;
+  pointer-events: none;
   transition: all 0.3s;
+  will-change: opacity;
 
   &:target {
     opacity: 1;
-    // display: inline-block;
-    visibility: visible;
+    pointer-events: auto;
   }
 
   &:target &__img {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s 0.2s ease-out;
   }
 
   &__img {
@@ -36,5 +36,6 @@
     background-size: contain;
     box-shadow: $box-shadow-gallery-photo;
     z-index: var(--z-index-frontmost);
+    will-change: transform;
   }
 }

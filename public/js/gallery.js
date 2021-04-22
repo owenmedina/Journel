@@ -14,10 +14,11 @@ gallery.addEventListener("click", function (e) {
 
 // Open gallery
 photosContainer.addEventListener("click", function (e) {
-  console.log("gallery container clicked");
   if (e.target.classList.contains("gallery__target")) {
     galleryImg.src = e.target.src;
-    window.location.href = galleryHref;
+    galleryImg.addEventListener("load", function (e) {
+      if (e.target.complete) window.location.href = galleryHref;
+    });
     return;
   }
   if (e.target?.querySelector("img").classList.contains("gallery__target")) {
