@@ -76,7 +76,7 @@ function getDecreasedFontSize(fontSize) {
 
 function fitText(element, text, maxLines = 1) {
   const elementWidth = element.offsetWidth;
-  const elementHeight = $(".title").height();
+  const elementHeight = element.offsetHeight;
   const fontSize = window
     .getComputedStyle(element)
     .getPropertyValue("font-size");
