@@ -1,6 +1,7 @@
 const gallery = document.querySelector(".gallery");
 const galleryImg = document.querySelector(".gallery__img");
-const photosContainer = document.querySelector(".timeline__photos");
+const photosContainer = document.querySelector(".gallery__target-container");
+console.log("photosContainer", photosContainer);
 
 const galleryHref = "#gallery";
 
@@ -13,8 +14,15 @@ gallery.addEventListener("click", function (e) {
 
 // Open gallery
 photosContainer.addEventListener("click", function (e) {
-  if (e.target.classList.contains("timeline__photo")) {
+  console.log("gallery container clicked");
+  if (e.target.classList.contains("gallery__target")) {
     galleryImg.src = e.target.src;
     window.location.href = galleryHref;
+    return;
+  }
+  if (e.target?.querySelector("img").classList.contains("gallery__target")) {
+    galleryImg.src = e.target.querySelector("img").src;
+    window.location.href = galleryHref;
+    return;
   }
 });
