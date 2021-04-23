@@ -1,0 +1,7 @@
+.recordings__calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 10rem);
+  grid-auto-rows: 10rem;
+  justify-items: center;
+  align-items: center;
+}

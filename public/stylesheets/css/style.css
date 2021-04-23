@@ -41,10 +41,14 @@ body {
   color: #000;
 }
 
-.page__heading {
+.heading {
   font-size: 5.5rem;
   font-weight: 800;
   text-align: center;
+}
+
+.sub-heading {
+  font-size: 3rem;
 }
 
 .mt-xs {
@@ -73,6 +77,11 @@ body {
   width: auto;
   height: auto;
   white-space: nowrap;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
 }
 
 .btn--sort {
@@ -442,6 +451,91 @@ body {
   grid-row: 2;
 }
 
+.recording {
+  width: 100%;
+  height: 100%;
+  padding: 15%;
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.recording:hover {
+  transform: scale(1.1);
+}
+.recording:active {
+  transform: scale(0.9);
+}
+.recording__date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recording__date--past {
+  color: #d2d2d2;
+}
+.recording__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recording__btn--play {
+  background-color: #b9e4ee;
+  border: none;
+}
+.recording__btn--pause {
+  background-color: #eff7f6;
+  border: 0.2rem solid #b9e4ee;
+}
+.recording__btn .icon-play,
+.recording__btn .icon-pause {
+  height: 50%;
+  width: 50%;
+}
+.recording__btn .icon-play {
+  fill: #eff7f6;
+}
+.recording__btn .icon-pause {
+  fill: #b9e4ee;
+}
+
+.recording--today .recording__date {
+  color: #f7d6e0;
+  border-radius: 50%;
+  border: 0.2rem solid #f7d6e0;
+}
+
+.recording--active .recording__date {
+  transform: scale(0);
+}
+.recording--active .recording__btn {
+  opacity: 1;
+}
+
+.recordings__calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 10rem);
+  grid-auto-rows: 10rem;
+  justify-items: center;
+  align-items: center;
+}
+
 .photos__main {
   display: grid;
   grid-template-rows: 3rem auto 2rem;
@@ -474,6 +568,24 @@ body {
   cursor: pointer;
   font-size: 1.15rem;
   color: #b9e4ee;
+}
+
+.recordings {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 95vh;
+}
+.recordings__main {
+  display: grid;
+  grid-template-rows: 3rem auto 2rem;
+  justify-items: center;
+  row-gap: 1rem;
+  width: 100%;
+}
+.recordings__sub-heading {
+  color: #72b3f1;
 }
 
 .timeline {
